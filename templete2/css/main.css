@@ -1,0 +1,232 @@
+
+.quicksand {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+:root{
+    --main-color: blue;
+    --main-duration: all .3s;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Quicksand", sans-serif;
+    /* background-image: url(../photos/8-83222_technology-wallpaper-full-hd.jpg); */
+
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 90%;
+
+}
+button:hover , a:hover , img:hover, i:hover{
+    transform: scale(1.2);
+
+}
+.home{
+    background-image: url("../photos/8-83222_technology-wallpaper-full-hd.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+} 
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    /* background-color:rgb(185, 185, 173); */
+}
+header .two{
+    width: 30px;
+    border-radius: 20px;
+}
+.home .pargraph{
+    color: whitesmoke;
+    text-align: center
+}
+br{
+    color: var(--main-color);
+}
+.home header button{
+    text-decoration: none;
+    border: solid var(--main-color) 5px;
+    border-radius: 20px;
+    background-color: var(--main-color);
+    color: whitesmoke;
+    font-weight: 500;
+    padding:10px 15px ;
+    transition: all 0.5s;
+}
+.home nav a{
+    margin-left: 30px;
+    text-decoration: none;
+    color: whitesmoke;
+    transition: .3s;
+    &:hover{
+        color: var(--main-color);
+    }
+
+}
+.home .social-icons{
+    margin-left: 20px;
+    margin-top: 50px;
+}
+.home .social-icons i{
+    font-size: 30px;
+    padding: 10px;
+    margin-left: 10px;
+    transition: all 0.3s;
+
+}
+.home .social{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 10px;
+    
+}
+.home .social button{
+    border: var(--main-color) 5px solid ;
+    border-radius: 20px;
+    margin: 20px;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    padding:5px 15px ;
+    font-weight: 500;
+    transition: all 0.3s;
+   
+}
+
+.home .transform{
+   position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+}
+.services{
+    background-color:white;
+}
+.services .serv div{
+   
+    border-radius: 20px;
+}
+.services h1{
+    color: var(--main-color);
+    
+}
+.serv{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+.services .serv img{
+    width: 20%;
+    margin-left: 50px;
+    transition: all .3s;
+    /* display: flex;
+    align-items: center; */
+    
+}
+.portfollo{
+    background-color: white;
+}
+.portfollo h1{
+color: var(--main-color);
+text-align: center;
+}
+.portfollo p{
+    color: brown;
+    text-align: center;
+}
+.portfollo .product{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    margin-top: 40px;
+}
+.portfollo .links a{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    border: var(--main-color) 5px solid;
+    border-radius: 30px;
+    color: whitesmoke;
+    background-color: var(--main-color);
+    font-size: 20px;
+    padding:5px 15px ;
+    font-weight: 500;
+    transition: all 0.5s;
+
+}
+.portfollo .links{
+    width: 70%;
+    margin-left: auto;
+    margin-right:auto ;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.portfollo img{
+    max-width: 100%;
+    border-radius: 20px;
+    transition: all .3s;
+}
+.icons .pargraph{
+    color: whitesmoke;
+    text-align: center
+}
+.icons .pargraph h1{
+    color: var(--main-color);
+}
+.icons .pargraph p{
+    color: brown;
+}
+.icons .six-icons{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    margin-top: 40px;
+}
+.icons .six-icons .right img,.icons .six-icons .left img{
+    width: 20%;
+    transition: all .3s;
+
+}
+.icons .six-icons .middle img{
+    align-items: center;
+    max-width: 100%;
+    margin-top: 150px;
+    transition: all 1s;
+}
+
